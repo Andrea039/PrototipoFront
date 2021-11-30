@@ -1,0 +1,268 @@
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos Header*/
+a{
+    text-decoration: none;
+    color:white;
+}
+header{
+    border-style: groove;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 20px;
+}
+header > img{
+    margin-left:100px;
+}
+nav a{
+    font-weight: 200px;
+    padding-right: 10px;
+    color: #242E52;
+}
+.boton-uno{
+    background: #F3603B;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    color: white;
+    width: 134px;
+    height: 44px;
+}
+
+/*Contenedor Primer Banner*/
+#contenedor-uno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:10px;
+    
+}
+.banner-izquierda-uno {  
+    position: relative;
+    align-items: center;
+    width: 360px;
+    height:250px;
+    border-style: groove;
+    margin: 100px 0px 15px 100px; 
+}
+.titulo-uno{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+}
+.parrafo-uno{
+    line-height: 157.1%;
+    margin-right: 55px;
+    margin-top:15px;
+    font-weight: 500;
+}
+.boton-dos{
+    background: #F3603B;
+    box-shadow: 0px 1px 1px rgba(87, 63, 63, 0.8);
+    border-radius: 20px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    margin-top:10px;
+}
+.banner-derecha-uno{
+    border-style: groove;
+    height: 400px;
+    width: 480px;
+    margin: 20px 0px 0px 0px;
+}
+.banner-derecha-uno img {
+    margin-left: 25px;
+    width: 430px;
+    height: 420px;
+}
+
+/*Contenedor Segundo Banner*/
+.banner-izquierda-dos{
+    position: relative;
+    align-items: center;
+    width: 360px;
+    height:180px;
+    border-style: groove;
+    margin: 70px 0px 15px 100px; 
+}
+.titulo-dos{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 114.6%;
+}
+.parrafo-dos{
+    line-height: 157.1%;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.banner-derecha-dos{
+    border-style: groove;
+    height: 400px;
+    width: 480px;
+    margin: 65px 0px 0px 0px;
+}
+.contenedor-opciones{
+    display: flex;
+    margin-top: 10px;
+}
+.contenedor-parrafo{
+    margin-left: 10px;
+}
+.titulo-opciones{
+    margin: 0px;
+    color: #323851;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+.estilo-boton-opciones{
+    background: #F3603B;
+    border-radius: 30px; 
+    width: 55px;
+    height: 35px;
+    color: white;
+}
+.parrafo-opciones{
+    color: #B3B2B7;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+}
+
+/*Testimonials*/
+.titulo-testimonio{
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 1150px;
+    border-style: groove;
+    color: #242E53;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 70px;
+}
+.banner-testimonials{
+    border-style: groove;
+    height: 250px;
+    width: 300px;
+    margin: 65px 0px 0px 0px;
+}
+.banner-testimonials img{
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+}
+.banner-testimonials h4{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    text-align:justify;
+    color: #3F4868;
+    font-weight: bold;
+    font-size: 16.0714px;
+}
+.banner-testimonials p{
+    display: flex;
+    align-items: center;
+    margin-left: 11px;
+    margin-top: 20px;
+    text-align:center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 156.6%;
+    color: #B9B9C1;
+}
+.boton-testimonios{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 1150px;
+    justify-content: center;
+    border-style: groove;
+    font-size: 26px;
+    margin-top: 70px;
+}
+.boton-testimonios button{
+    background: #F3603B;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+}
+
+/*Information footer*/
+.information-footer{
+    display: flex;
+    background: #F3613C;
+    justify-content:space-around;
+    margin-top: 100px;
+    height: 200px;
+    border-style: groove;
+}
+.information-footer h2{
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: start;
+    width: 400px;
+    align-items: center;
+    border-style: groove;
+}
+.information-footer button{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+    align-items: center;
+    border-style: groove;
+    margin-top:67px;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:0;
+    border-style: groove;
+}
+.contenedor-logos-footer{
+    margin-top: 45px;
+}
+.logos-footer{
+    display: flex;
+    justify-content: space-around;
+    border-style: groove;
+}
+.opciones-footer{
+    display: flex;
+    justify-content: space-between;
+    border-style: groove;
+}
+.opciones-footer nav ul{
+    font-weight: 200px;
+    padding-right: 10px;
+    color: #242E52;
+    margin: 12px 0px;
+}
+
+
