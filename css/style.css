@@ -31,81 +31,82 @@ nav a{
 }
 .boton-uno{
     background: #F3603B;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border:0;
     border-radius: 50px;
     color: white;
     width: 134px;
     height: 44px;
 }
-
+.icono-bars{
+    display:none;
+}
 /*Contenedor Primer Banner*/
 #contenedor-uno{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:10px;
     
 }
 .banner-izquierda-uno {  
     position: relative;
     align-items: center;
-    width: 360px;
-    height:250px;
     border-style: groove;
-    margin: 100px 0px 15px 100px; 
+    width: 35vw;
+    margin: 150px 0px 15px 100px; 
 }
 .titulo-uno{
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 58px;
+    line-height: 66px;
+    color: #232C50;
 }
 .parrafo-uno{
-    line-height: 157.1%;
-    margin-right: 55px;
+    margin-right: 140px;
     margin-top:15px;
     font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 157.1%;
 }
 .boton-dos{
     background: #F3603B;
-    box-shadow: 0px 1px 1px rgba(87, 63, 63, 0.8);
-    border-radius: 20px;
+    border-radius: 50px;
+    border:0;
     color: white;
-    width: 120px;
-    height: 35px;
-    margin-top:10px;
+    width: 134px;
+    height: 44px;
+    margin-top:20px;
 }
 .banner-derecha-uno{
     border-style: groove;
-    height: 400px;
-    width: 480px;
-    margin: 20px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
 }
 .banner-derecha-uno img {
-    margin-left: 25px;
-    width: 430px;
-    height: 420px;
+    position: relative;
+    width: 40vw;
+    height: 45vh;
 }
 
 /*Contenedor Segundo Banner*/
 .banner-izquierda-dos{
     position: relative;
     align-items: center;
-    width: 360px;
-    height:180px;
+    width: 35%;
     border-style: groove;
-    margin: 70px 0px 15px 100px; 
+    margin: 150px 0px 15px 70px; 
 }
 .titulo-dos{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 114.6%;
+    color: #232851;
 }
 .parrafo-dos{
-    line-height: 157.1%;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 150px;
+    margin-top: 30px;
     font-size: 16px;
+    line-height: 151.1%;
     font-weight: 500;
 }
 .banner-derecha-dos{
@@ -148,7 +149,7 @@ nav a{
     display: flex;
     height: 100px;
     justify-content: center;
-    width: 1150px;
+    width: 100%;
     border-style: groove;
     color: #242E53;
     font-weight: bold;
@@ -175,6 +176,7 @@ nav a{
     color: #3F4868;
     font-weight: bold;
     font-size: 16.0714px;
+    
 }
 .banner-testimonials p{
     display: flex;
@@ -186,23 +188,29 @@ nav a{
     font-size: 14px;
     line-height: 156.6%;
     color: #B9B9C1;
+    
+}
+.color-testimonios{
+    background-color: #FAFAFA;
 }
 .boton-testimonios{
     align-items: center;
     display: flex;
     height: 50px;
-    width: 1150px;
+    width: 100%;
     justify-content: center;
     border-style: groove;
     font-size: 26px;
     margin-top: 70px;
+    
 }
 .boton-testimonios button{
     background: #F3603B;
-    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    border:0;
     border-radius: 50px;
     width: 134px;
     height: 44px;
+    color:white;
 }
 
 /*Information footer*/
@@ -228,14 +236,19 @@ nav a{
 .information-footer button{
     display: flex;
     background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border:0;
     border-radius: 50px;
-    width: 134px;
+    width: 140px;
     height: 44px;
     align-items: center;
     border-style: groove;
     margin-top:67px;
+    color: tomato;
+    text-align: center;
+    padding: 20px 28px;
+    
 }
+
 
 /*Footer*/
 footer{
@@ -244,6 +257,7 @@ footer{
     flex-wrap: wrap;
     margin-top:0;
     border-style: groove;
+    background: #1E1E26;
 }
 .contenedor-logos-footer{
     margin-top: 45px;
@@ -252,17 +266,74 @@ footer{
     display: flex;
     justify-content: space-around;
     border-style: groove;
+    color: white;
+    align-items: center;
+    margin-top: 30px;
 }
 .opciones-footer{
     display: flex;
     justify-content: space-between;
     border-style: groove;
+    color: white;
+    align-items: center;
 }
 .opciones-footer nav ul{
     font-weight: 200px;
     padding-right: 10px;
     color: #242E52;
     margin: 12px 0px;
+    color:white
+}
+.input-text{
+    border-radius: 20px;
+    border: 1px solid #a1a1a1;
+    height: 40px;
+    width: 201px;
+    margin-top: 40px;
+}
+.input-button{
+    border-radius: 20px;
+    height: 40px;
+    border:0px;
+    background-color: #F3603B;
+    color: white;
+    padding: 10px 20px;
+}
+.copy{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 12.5px;
+    float: right;
+    color: #8C8C94;
+}
+
+/*Mobile Responsive*/
+@media screen and (max-width: 375px){
+    #contenedor-uno{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .icono-bars{
+        display: block ;
+    }
+    nav a{
+        display:none;
+    }
+    header > img{
+        margin-left:10px;
+    }
+    .boton-uno{
+        display:none;
+    }
+   
+
+}
+/*Desktop Responsive*/
+@media screen and (min-width:1440px){
+    
 }
 
 
