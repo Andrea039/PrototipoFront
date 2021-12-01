@@ -14,7 +14,6 @@ a{
     color:white;
 }
 header{
-    border-style: groove;
     display: flex;
     justify-content: space-between;
     height: 70px;
@@ -40,7 +39,7 @@ nav a{
 .icono-bars{
     display:none;
 }
-/*Contenedor Primer Banner*/
+/*First Banner*/
 #contenedor-uno{
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +50,6 @@ nav a{
 .banner-izquierda-uno {  
     position: relative;
     align-items: center;
-    border-style: groove;
     width: 35vw;
     margin: 150px 0px 15px 100px; 
 }
@@ -79,7 +77,6 @@ nav a{
     margin-top:20px;
 }
 .banner-derecha-uno{
-    border-style: groove;
     margin: 50px 0px 0px 0px;
 }
 .banner-derecha-uno img {
@@ -88,12 +85,17 @@ nav a{
     height: 45vh;
 }
 
-/*Contenedor Segundo Banner*/
+/*Second Banner*/
+#contenedor-dos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:10px;
+}
 .banner-izquierda-dos{
     position: relative;
     align-items: center;
     width: 35%;
-    border-style: groove;
     margin: 150px 0px 15px 70px; 
 }
 .titulo-dos{
@@ -110,7 +112,6 @@ nav a{
     font-weight: 500;
 }
 .banner-derecha-dos{
-    border-style: groove;
     height: 400px;
     width: 480px;
     margin: 65px 0px 0px 0px;
@@ -131,6 +132,7 @@ nav a{
 }
 .estilo-boton-opciones{
     background: #F3603B;
+    border:0;
     border-radius: 30px; 
     width: 55px;
     height: 35px;
@@ -150,14 +152,12 @@ nav a{
     height: 100px;
     justify-content: center;
     width: 100%;
-    border-style: groove;
     color: #242E53;
     font-weight: bold;
     font-size: 26px;
     margin-top: 70px;
 }
 .banner-testimonials{
-    border-style: groove;
     height: 250px;
     width: 300px;
     margin: 65px 0px 0px 0px;
@@ -176,7 +176,6 @@ nav a{
     color: #3F4868;
     font-weight: bold;
     font-size: 16.0714px;
-    
 }
 .banner-testimonials p{
     display: flex;
@@ -187,8 +186,7 @@ nav a{
     font-weight: 500;
     font-size: 14px;
     line-height: 156.6%;
-    color: #B9B9C1;
-    
+    color: #B9B9C1;   
 }
 .color-testimonios{
     background-color: #FAFAFA;
@@ -199,10 +197,8 @@ nav a{
     height: 50px;
     width: 100%;
     justify-content: center;
-    border-style: groove;
     font-size: 26px;
-    margin-top: 70px;
-    
+    margin-top: 70px; 
 }
 .boton-testimonios button{
     background: #F3603B;
@@ -220,7 +216,6 @@ nav a{
     justify-content:space-around;
     margin-top: 100px;
     height: 200px;
-    border-style: groove;
 }
 .information-footer h2{
     display: flex;
@@ -231,7 +226,6 @@ nav a{
     text-align: start;
     width: 400px;
     align-items: center;
-    border-style: groove;
 }
 .information-footer button{
     display: flex;
@@ -241,14 +235,11 @@ nav a{
     width: 140px;
     height: 44px;
     align-items: center;
-    border-style: groove;
     margin-top:67px;
     color: tomato;
     text-align: center;
     padding: 20px 28px;
-    
 }
-
 
 /*Footer*/
 footer{
@@ -256,28 +247,55 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top:0;
-    border-style: groove;
     background: #1E1E26;
+}
+.prueba-logo-iconos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 170px;
+    color: white;
+
 }
 .contenedor-logos-footer{
     margin-top: 45px;
+    color: white;
+    height: 20px;
+    width: 150px;
 }
 .logos-footer{
     display: flex;
     justify-content: space-around;
-    border-style: groove;
     color: white;
     align-items: center;
     margin-top: 30px;
+    width: 10%;
+    height: 20px;
+    width: 200px;
+}
+.prueba-opciones-footer{
+    display: flex;
+    color:white;
 }
 .opciones-footer{
     display: flex;
-    justify-content: space-between;
-    border-style: groove;
+    margin-right: 200px;
     color: white;
     align-items: center;
 }
+.opciones-footer2{
+    display: flex;
+    color: white;
+    align-items: center;
+
+}
 .opciones-footer nav ul{
+    font-weight: 200px;
+    padding-right: 10px;
+    color: #242E52;
+    margin: 12px 0px;
+    color:white
+}
+.opciones-footer2 nav ul{
     font-weight: 200px;
     padding-right: 10px;
     color: #242E52;
@@ -306,16 +324,27 @@ footer{
     float: right;
     color: #8C8C94;
 }
+.copy-2{
+    display: none;
+}
 
-/*Mobile Responsive*/
+/*Mobile Responsive (375*687) */
 @media screen and (max-width: 375px){
     #contenedor-uno{
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         display: flex;
         justify-content: center;
         height: 100%;
     }
+    #contenedor-dos{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%
+    }
+    /*Header*/
     .icono-bars{
         display: block ;
     }
@@ -328,10 +357,244 @@ footer{
     .boton-uno{
         display:none;
     }
-   
+    /*First Banner*/
+    .banner-derecha-uno{
+        margin: 50px 0px 0px 6px;
+        width: 90%;
+        height: 30%;
+    }
+    .banner-derecha-uno img {
+        position: relative;
+        width: 350px;
+        height: 300px;
+    }
+    .banner-izquierda-uno {  
+        position: relative;
+        align-items: center;
+        width: 70%;
+        margin: 30px 0px 15px 50px; 
+    }
+    .titulo-uno{
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        color: #232C50;
+        text-align: center;
+    }
+    .parrafo-uno{
+        display: flex;
+        text-align: center;
+        margin-right: 10px;
+        margin-top:15px;
+        font-weight: 500;
+        font-size: 16.5584px;
+        line-height: 157.1%;
+        color: #B3B2B7;;
+    }
+    .boton-dos{
+        background: #F3603B;
+        border-radius: 50px;
+        border:0;
+        color: white;
+        width: 134px;
+        height: 44px;
+        margin-top:20px;
+        margin-left: 63px;
+    }
+    /*Second Banner*/
+    .banner-izquierda-dos{
+        position: relative;
+        align-items: center;
+        width: 70%;
+        margin: 60px 0px 15px 50px; 
+    }
+    .titulo-dos{
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 114.6%;
+        color: #232851;
+    }
+    .parrafo-dos{
+        display: flex;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 151.1%;
+        font-weight: 500;
+        color:#B3B2B7;
+        margin-right: 0;
+    }
+    .banner-derecha-dos{
+        height: 500px;
+        width: 340px;
+        margin: 0px 0px 0px 0px;
+    }
+    .contenedor-parrafo{
+        margin-left: 0px;
+        
+    }
+    .titulo-opciones{
+        margin-right:20px;
+        margin: 0px;
+        color: #323851;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        background:#f0d7d1;
+    }
+    .estilo-boton-opciones{
+        background: #F3603B;
+        border-radius: 30px; 
+        border: 0;
+        width: 55px;
+        height: 23px;
+        color: white;
+    }
+    /*Testimonials*/
+    .titulo-testimonio{
+        align-items: center;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        width: 90%;
+        color: #242E53;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 70px;
+    }
+    .banner-testimonials{
+        height: 250px;
+        width: 300px;
+        margin: 65px 0px 0px 20px;
+    }
+    .boton-testimonios{
+        align-items: center;
+        display: flex;
+        height: 50px;
+        width: 90%;
+        justify-content: center;
+        font-size: 26px;
+        margin-top: 70px; 
+    }
+    /*Information footer*/
+    .information-footer{
+        display: inline-block;
+        background: #F3613C;
+        margin-top: 50px;
+        height: 300px;
+    }
+    .information-footer h2{
+        display: flex;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 48px;
+        color: #FFFFFF;
+        text-align: start;
+        width: 70%;
+        align-items: center;
+        text-align: center;
+        margin-left: 55px;
+        margin-top: 40px;
+    }
+    .information-footer button{
+        background: #FFFFFF;
+        border:0;
+        border-radius: 50px;
+        width: 140px;
+        height: 44px;
+        margin-top:67px;
+        color: tomato;
+        padding: 20px 28px;
+        margin-top: 20px;
+        margin-left: 115px;
+    }
+    /*Footer*/
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top:0;
+        width: 100%;
 
+        background: #1E1E26;
+    }
+    .contenedor-logos-footer{
+        display: block;  
+        margin-left: 100px; 
+    }
+    .prueba-logo-iconos{
+        display: flex;
+        width: 100%;
+    }
+    .logos-footer{
+        display: flex;
+        justify-content:space-evenly;
+        color: white;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    .prueba-opciones-footer{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+    .opciones-footer{
+        margin-left: 70px;
+        margin-right: 0px;
+        width: 26%; 
+    }
+    .opciones-footer2{
+        width: 35%;
+    }
+    .opciones-footer nav ul{
+        font-weight: 200px;
+        padding-right: 10px;
+        color: #242E52;
+        margin: 12px 0px;
+        color:white
+    }
+    .opciones-footer2 nav ul{
+        font-weight: 200px;
+        padding-right: 10px;
+        color: #242E52;
+        margin: 12px 0px;
+        color:white
+    }
+    .input-text{
+        border-radius: 20px;
+        border: 1px solid #a1a1a1;
+        height: 40px;
+        width: 201px;
+        margin-left: 65px;
+        margin-top:5px;
+    }
+    .input-button{
+        border-radius: 20px;
+        height: 40px;
+        border:0px;
+        background-color: #F3603B;
+        color: white;
+        padding: 10px 20px;
+    }
+    .copy{
+        display: none;
+    }
+    .copy-2{
+        display: flex;
+        width: 100%;
+        background: #1E1E26;
+        font-size: 12.5px;
+        color: #8C8C94;
+    }
+    .copy-2 p{
+        display: flex;
+        text-align: center;
+    }
 }
-/*Desktop Responsive*/
+/*Desktop Responsive (1440*1373) */
 @media screen and (min-width:1440px){
     
 }
