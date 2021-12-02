@@ -7,15 +7,10 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-position-x: 890px;
-    background-position-y: -200px;
-    background-image: url("../img/bg-simplify-section-desktop.svg");
-    background-repeat: no-repeat;
-}
+
 
 /*Desktop Responsive (1440*1373) */
-/*Estilos Header*/
+/*Style Header*/
 a{
     text-decoration: none;
     color:white;
@@ -35,6 +30,7 @@ nav a{
     padding-right: 10px;
     color: #242E52;
 }
+
 .boton-uno{
     background: #F3603B;
     border:0;
@@ -43,22 +39,26 @@ nav a{
     width: 134px;
     height: 44px;
 }
+.boton-uno:hover{
+    background: #d88e7b;
+}
 .icono-bars{
     display:none;
 }
+
 /*First Banner*/
 #contenedor-uno{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin:10px;
-    
+    margin:10px; 
 }
 .banner-izquierda-uno {  
     position: relative;
     align-items: center;
-    width: 35vw;
-    margin: 150px 0px 15px 100px; 
+    width: 40%;
+    padding: 150px 0px 15px 100px; 
+    margin: 0;
 }
 .titulo-uno{
     font-style: normal;
@@ -74,6 +74,9 @@ nav a{
     font-size: 16.5584px;
     line-height: 157.1%;
 }
+.parrafo-uno::selection{
+    color: grey;
+}
 .boton-dos{
     background: #F3603B;
     border-radius: 50px;
@@ -83,8 +86,11 @@ nav a{
     height: 44px;
     margin-top:20px;
 }
+.boton-dos:hover{
+    background: #d88e7b;
+}
 .banner-derecha-uno{
-    margin: 50px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 .banner-derecha-uno img {
     position: relative;
@@ -103,7 +109,7 @@ nav a{
     position: relative;
     align-items: center;
     width: 35%;
-    margin: 150px 0px 15px 70px; 
+    padding: 150px 0px 15px 70px; 
 }
 .titulo-dos{
     font-weight: bold;
@@ -118,10 +124,13 @@ nav a{
     line-height: 151.1%;
     font-weight: 500;
 }
+.parrafo-dos::selection{
+    color: grey;
+}
 .banner-derecha-dos{
-    height: 400px;
-    width: 480px;
-    margin: 65px 0px 0px 0px;
+    height: 100%;
+    width: 35%;
+    padding: 65px 0px 0px 0px;
 }
 .contenedor-opciones{
     display: flex;
@@ -145,6 +154,9 @@ nav a{
     height: 35px;
     color: white;
 }
+.estilo-boton-opciones:hover{
+    background: #d88e7b;
+}
 .parrafo-opciones{
     color: #B3B2B7;
     font-size: 14px;
@@ -156,7 +168,6 @@ nav a{
 .titulo-testimonio{
     align-items: center;
     display: flex;
-    height: 100px;
     justify-content: center;
     width: 100%;
     color: #242E53;
@@ -201,12 +212,12 @@ nav a{
 .boton-testimonios{
     align-items: center;
     display: flex;
-    height: 50px;
     width: 100%;
     justify-content: center;
     font-size: 26px;
-    margin-top: 70px; 
+    padding-top: 70px; 
 }
+
 .boton-testimonios button{
     background: #F3603B;
     border:0;
@@ -231,8 +242,9 @@ nav a{
     line-height: 48px;
     color: #FFFFFF;
     text-align: start;
-    width: 400px;
+    width: 30%;
     align-items: center;
+
 }
 .information-footer button{
     display: flex;
@@ -293,7 +305,6 @@ footer{
     display: flex;
     color: white;
     align-items: center;
-
 }
 .opciones-footer nav ul{
     font-weight: 200px;
@@ -324,6 +335,9 @@ footer{
     color: white;
     padding: 10px 20px;
 }
+.input-button:hover{
+    background: #d88e7b;
+}
 .copy{
     margin-top: 20%;
     margin-bottom: 20%;
@@ -337,6 +351,12 @@ footer{
 
 /*Mobile Responsive (375*687) */
 @media screen and (max-width: 375px){
+    body{
+        background-image: url("../img/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-size: 110%,80%;
+        background-position: top -80px right -90px,bottom 10px right -170px;
+    }
     #contenedor-uno{
         flex-direction: column-reverse;
         max-width: 100%;
@@ -368,11 +388,15 @@ footer{
     .boton-uno{
         display:none;
     }
+    .boton-uno:hover{
+        background: #d88e7b;
+    }
     /*First Banner*/
     .banner-derecha-uno{
-        margin: 50px 0px 0px 6px;
+        margin: 0px 0px 0px 6px;
         width: 90%;
         height: 30%;
+        padding-top: 0;
     }
     .banner-derecha-uno img {
         position: relative;
@@ -383,7 +407,8 @@ footer{
         position: relative;
         align-items: center;
         width: 70%;
-        margin: 30px 0px 15px 50px; 
+        margin: 0px 0px 15px 65px; 
+        padding: 0;
     }
     .titulo-uno{
         display: flex;
@@ -414,18 +439,23 @@ footer{
         margin-top:20px;
         margin-left: 63px;
     }
+    .boton-dos:hover{
+        background: #d88e7b;
+    }
     /*Second Banner*/
     .banner-izquierda-dos{
         position: relative;
         align-items: center;
-        width: 70%;
-        margin: 60px 0px 15px 50px; 
+        width: 80%;
+        margin: 30px 0px 15px 40px; 
+        padding:0px;
+        box-sizing: border-box;
     }
     .titulo-dos{
         display: flex;
         text-align: center;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 114.6%;
         color: #232851;
     }
@@ -446,7 +476,6 @@ footer{
     }
     .contenedor-parrafo{
         margin-left: 0px;
-        
     }
     .titulo-opciones{
         margin-right:20px;
@@ -469,27 +498,31 @@ footer{
     .titulo-testimonio{
         align-items: center;
         display: flex;
-        height: 100px;
         justify-content: center;
         width: 90%;
         color: #242E53;
         font-weight: bold;
         font-size: 20px;
-        margin-top: 70px;
+        margin-top: 0px;
+        padding-left: 15px;
     }
     .banner-testimonials{
         height: 250px;
         width: 300px;
-        margin: 65px 0px 0px 20px;
+        margin: 65px 0px 0px 35px;
     }
     .boton-testimonios{
         align-items: center;
         display: flex;
         height: 50px;
-        width: 90%;
+        width: 100%;
         justify-content: center;
         font-size: 26px;
-        margin-top: 70px; 
+        margin-top: 10px; 
+        padding-top: 5px;
+    }
+    .boton-testimonios button:hover{
+        background: #d88e7b;
     }
     /*Information footer*/
     .information-footer{
@@ -523,13 +556,13 @@ footer{
         margin-top: 20px;
         margin-left: 115px;
     }
+
     /*Footer*/
     footer{
         display: flex;
         flex-direction: column-reverse;
         margin-top:0;
         width: 100%;
-
         background: #1E1E26;
     }
     .contenedor-logos-footer{
@@ -553,12 +586,13 @@ footer{
         flex-wrap: nowrap;
     }
     .opciones-footer{
-        margin-left: 70px;
+        margin-left: 80px;
         margin-right: 0px;
         width: 26%; 
     }
     .opciones-footer2{
         width: 35%;
+        margin-left: 25px;
     }
     .opciones-footer nav ul{
         font-weight: 200px;
@@ -590,19 +624,24 @@ footer{
         color: white;
         padding: 10px 20px;
     }
+    .input-button:hover{
+        background: #d88e7b;
+    }
     .copy{
         display: none;
     }
     .copy-2{
         display: flex;
-        width: 100%;
+        max-width: 100%;
         background: #1E1E26;
         font-size: 12.5px;
         color: #8C8C94;
+        padding-top: 20px;
+        padding-left: 75px;
     }
-    .copy-2 p{
-        display: flex;
-        text-align: center;
+
+    .icono-bars::selection{
+        color:gray;
     }
 }
 
